@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -11,6 +12,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: Column(
+          children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundImage: AssetImage('images/sabbir.jpg'),
+            ),
+            Text(
+              'Sabbir',
+              style: GoogleFonts.pacifico(
+                color: Colors.white,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
