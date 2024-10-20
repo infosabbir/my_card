@@ -39,46 +39,48 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 2.5,
                   fontFamily: 'Source Sans Pro'),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
-              color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.phone,
-                    color: Colors.teal,
-                  ),
-                  SizedBox(width: 10),
-                  Text(
-                    '+8801517830512',
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 20,
-                        fontFamily: 'Source Sans Pro'),
-                  ),
-                ],
+            SizedBox(
+              width: 150,
+              height: 20,
+              child: Divider(
+                color: Colors.teal.shade100,
+                thickness: 2.0,
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(10),
+            Card(
               margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
               color: Colors.white,
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.email,
-                    color: Colors.teal,
+              child: ListTile(
+                leading: Icon(
+                  Icons.call,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  '+8801517830512',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade900,
                   ),
-                  SizedBox(width: 10),
-                  Text(
-                    'infosabbir9@gmail.com',
-                    style: TextStyle(
-                        color: Colors.teal.shade900,
-                        fontSize: 20,
-                        fontFamily: 'Source Sans Pro'),
+                ),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+              color: Colors.white,
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  color: Colors.teal,
+                ),
+                title: Text(
+                  'infosabbir9@gmail.com',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontFamily: 'Source Sans Pro',
+                    color: Colors.teal.shade900,
                   ),
-                ],
+                ),
               ),
             ),
           ],
